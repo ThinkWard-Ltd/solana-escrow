@@ -7,6 +7,9 @@ pub enum EscrowError {
     // Invalid instruction (defining an error type)
     #[error("Invalid Instruction")]
     InvalidInstruction,
+    // Not Rent Exempt
+    #[error("Not Rent Exempt")]
+    NotRentExempt,
 }
 
 // Implementing a genetic traits, converting ```EscrowError``` to ```ProgramError```
