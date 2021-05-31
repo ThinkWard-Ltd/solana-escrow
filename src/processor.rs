@@ -45,7 +45,7 @@ impl Processor {
         // it will fail if account not owned by the token program
         // - because only programs that own accounts may change accounts
         
-        let excrow_account = next_account_info(account_info_iter)?;
+        let escrow_account = next_account_info(account_info_iter)?;
         let rent = &Rent::from_account_info(next_account_info(account_info_iter)?)?;
 
         Ok(())
